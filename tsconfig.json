@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2022",
+    "composite": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "tsBuildInfoFile": "./dist/tsconfig.build.tsbuildinfo",
+    "module": "NodeNext",
+    "moduleDetection": "force",
+    "moduleResolution": "nodenext",
+    "customConditions": ["my-package-dev"],
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*", "test/**/*"],
+  "exclude": ["node_modules", "dist", "coverage"]
+}

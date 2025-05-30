@@ -1,0 +1,26 @@
+{
+  "name": "traceloop-exp",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check-types": "tsc -p tsconfig.build.json --noEmit",
+    "start": "pnpm build && dotenvx run -f .env -- node ./dist/src/index.js"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.44.1",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.59.0",
+    "@opentelemetry/instrumentation": "^0.57.2",
+    "@opentelemetry/sdk-node": "^0.201.0",
+    "@traceloop/node-server-sdk": "^0.13.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "typescript": "5.8.2"
+  },
+  "packageManager": "pnpm@10.11.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
